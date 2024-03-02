@@ -3,3 +3,14 @@
   justify-content: $x;
   align-items: $y;
 }
+
+@mixin section_width($x: 1360px) {
+  width: 100%;
+  max-width: $x;
+  margin: 2rem auto;
+}
+
+@mixin disply_grid($x: 3, $y: 1fr) {
+  display: grid;
+  grid-template-columns: repeat($x, $y);
+}

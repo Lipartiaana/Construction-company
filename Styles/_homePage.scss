@@ -56,3 +56,54 @@ header {
     }
   }
 }
+
+main {
+  .blog-categories {
+    @include section_width();
+
+    .category-grid-container {
+      padding: 0 1rem;
+      @include disply_grid();
+      gap: 1rem;
+
+      @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+
+  .blog-latest {
+    @include section_width();
+
+    .news-grid-container {
+      padding: 0 1rem;
+      @include disply_grid();
+      gap: 1rem;
+
+      .card {
+        cursor: pointer;
+
+        img {
+          height: 200px;
+        }
+        p {
+          font-size: 1rem;
+          padding: 0 1rem 1rem 1rem;
+
+          .read-more {
+            color: $primary-color;
+            font-weight: 700;
+
+            &:hover {
+              color: $primary-color-hover;
+            }
+          }
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}
