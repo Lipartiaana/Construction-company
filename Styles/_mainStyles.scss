@@ -1,0 +1,182 @@
+body {
+  background-color: $white-color;
+  font-family: "Work Sans", sans-serif;
+
+  .btn {
+    border: none;
+    background-color: $primary-color;
+    padding: 1rem 2rem;
+    color: $white-color;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    border-radius: 0.5rem;
+    margin: 2rem;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $primary-color-hover;
+      color: $white-color;
+    }
+  }
+
+  nav {
+    width: 100%;
+    height: 4rem;
+    background-color: $black-color;
+    @include display_flex();
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      height: fit-content;
+    }
+
+    .search {
+      width: 50%;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+
+      form {
+        @include display_flex();
+
+        .search-input {
+          width: 50%;
+          max-width: 500px;
+          height: 2.5rem;
+          border: none;
+          border-radius: 0.5rem;
+          padding: 0.5rem 1rem;
+          font-size: 1.2rem;
+          transition: all 0.5s ease;
+
+          @media screen and (max-width: 500px) {
+            width: 70%;
+            margin: 0 0 0 0.5rem;
+          }
+
+          &::placeholder {
+            color: $black-color;
+            font-size: 1rem;
+          }
+
+          &:focus {
+            border: none;
+            outline: none;
+            background-color: $primary-color-hover;
+          }
+        }
+
+        .search-btn {
+          height: 2.5rem;
+          letter-spacing: 0.1rem;
+          padding: 0.3rem 1rem;
+          font-size: 1.2rem;
+          font-weight: 500;
+
+          @media screen and (max-width: 500px) {
+            margin: 2rem 0.5rem;
+            letter-spacing: 0;
+          }
+
+          &:hover {
+            color: $white-color;
+          }
+        }
+      }
+    }
+
+    .navbar {
+      width: 50%;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+
+      .dropdown {
+        display: none;
+
+        @media screen and (max-width: 768px) {
+          display: block;
+          width: 100%;
+
+          .btn {
+            width: 100%;
+            margin: 0;
+            padding: auto;
+            border-radius: 0;
+
+            &:focus {
+              background-color: $primary-color-hover;
+            }
+          }
+
+          .dropdown-menu {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            border: none;
+
+            li {
+              width: 100%;
+              height: 4rem;
+              color: $white-color;
+              background-color: $black-color;
+
+              a {
+                @include display_flex(left);
+                width: 100%;
+                height: 100%;
+                color: $white-color;
+                background-color: $black-color;
+                transition: all 0.5s ease;
+                border-bottom: 1px solid $primary-color;
+
+                &:hover {
+                  background-color: $primary-color-hover;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      ul {
+        @include display_flex();
+
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
+
+        li {
+          @include display_flex();
+          width: 10rem;
+          height: 4rem;
+          color: $white-color;
+          font-size: 1.2rem;
+          transition: all 0.5s ease-out;
+
+          @media screen and (max-width: 1360px) {
+            width: 8rem;
+          }
+
+          @media screen and (max-width: 1024px) {
+            font-size: 1rem;
+            width: 7rem;
+          }
+
+          @media screen and (max-width: 992px) {
+            font-size: 1rem;
+            width: 6rem;
+          }
+
+          &:hover {
+            background-color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
