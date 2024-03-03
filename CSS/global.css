@@ -357,6 +357,114 @@ body .card img {
   -o-object-fit: cover;
      object-fit: cover;
 }
+body footer {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+  background-color: #000;
+  color: #fff;
+}
+body footer .footer-info {
+  width: 100%;
+  max-width: 1360px;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media screen and (max-width: 768px) {
+  body footer .footer-info {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+body footer .footer-info .footer-menu {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+@media screen and (max-width: 1360px) {
+  body footer .footer-info .footer-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+body footer .footer-info .footer-menu li {
+  line-height: 2.3rem;
+}
+body footer .footer-info .footer-menu li a {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+body footer .footer-info .footer-menu li a:hover {
+  color: #e8554e;
+}
+body footer .footer-info .footer-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  body footer .footer-info .footer-contact {
+    padding: 1rem;
+  }
+  body footer .footer-info .footer-contact p {
+    line-height: 2rem;
+  }
+}
+body footer .footer-info .footer-contact .btn {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  font-size: 1.1rem;
+}
+body footer .footer-info .footer-contact .footer-social-media i {
+  font-size: 1.7rem;
+  padding: 0.5rem;
+  color: #db251d;
+  transition: all 0.3s ease;
+}
+body footer .footer-info .footer-contact .footer-social-media i:hover {
+  color: #e8554e;
+}
+body footer .footer-info .footer-address {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: center;
+}
+@media screen and (max-width: 1360px) {
+  body footer .footer-info .footer-address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  body footer .footer-info .footer-address {
+    padding: 1rem 0 0 0;
+  }
+}
+body footer .footer-info .footer-address img {
+  margin-top: 1rem;
+  width: 320px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 1360px) {
+  body footer .footer-info .footer-address img {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 500px) {
+  body footer .footer-info .footer-address img {
+    height: 120px;
+  }
+}
+body footer .rights {
+  text-align: center;
+}
 
 header .hero-header img {
   position: absolute;

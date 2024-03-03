@@ -212,4 +212,109 @@ body {
       object-fit: cover;
     }
   }
+
+  footer {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    background-color: $black-color;
+    color: $white-color;
+
+    .footer-info {
+      @include section_width();
+      @include disply_grid();
+
+      @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .footer-menu {
+        @include display_flex(null, flex-start);
+        flex-direction: column;
+
+        @media screen and (max-width: 1360px) {
+          @include display_flex();
+        }
+
+        li {
+          line-height: 2.3rem;
+
+          a {
+            color: $white-color;
+            transition: all 0.3s ease;
+
+            &:hover {
+              color: $primary-color-hover;
+            }
+          }
+        }
+      }
+
+      .footer-contact {
+        @include display_flex(space-between);
+        flex-direction: column;
+
+        @media screen and (max-width: 768px) {
+          padding: 1rem;
+
+          p {
+            line-height: 2rem;
+          }
+        }
+
+        .btn {
+          padding: 0.5rem 1rem;
+          margin: 0.5rem;
+          font-size: 1.1rem;
+        }
+
+        .footer-social-media {
+          i {
+            font-size: 1.7rem;
+            padding: 0.5rem;
+            color: $primary-color;
+            transition: all 0.3s ease;
+
+            &:hover {
+              color: $primary-color-hover;
+            }
+          }
+        }
+      }
+
+      .footer-address {
+        @include display_flex(null, flex-end);
+        flex-direction: column;
+        text-align: center;
+
+        @media screen and (max-width: 1360px) {
+          @include display_flex();
+        }
+
+        @media screen and (max-width: 768px) {
+          padding: 1rem 0 0 0;
+        }
+
+        img {
+          margin-top: 1rem;
+          width: 320px;
+          height: 150px;
+          object-fit: cover;
+
+          @media screen and (max-width: 1360px) {
+            width: 80%;
+          }
+
+          @media screen and (max-width: 500px) {
+            height: 120px;
+          }
+        }
+      }
+    }
+
+    .rights {
+      text-align: center;
+    }
+  }
 }
