@@ -514,4 +514,197 @@ main .banner .banner-grid-container .banner-grid-item .banner-count {
   main .banner .banner-grid-container {
     grid-template-columns: 1fr;
   }
+}
+main .quotes {
+  width: 100%;
+  max-width: 1360px;
+  margin: 2rem auto;
+  margin-bottom: 0;
+  padding: 1rem;
+}
+main .quotes .main-quote {
+  width: 100%;
+  background-color: #e5e5e5;
+  border-left: 0.5rem solid #db251d;
+  font-size: 1.6rem;
+  line-height: 4rem;
+  font-style: italic;
+  text-align: center;
+  padding: 5rem 2rem 3rem;
+}
+@media screen and (max-width: 768px) {
+  main .quotes .main-quote {
+    line-height: 3rem;
+    font-size: 1.2rem;
+    padding: 3rem 2rem 2rem;
+  }
+}
+main .quotes .main-quote span {
+  color: #db251d;
+  font-size: 5rem;
+  font-weight: 900;
+  padding: 2rem;
+}
+@media screen and (max-width: 768px) {
+  main .quotes .main-quote span {
+    font-size: 2.5rem;
+  }
+}
+main .quotes .main-quote p {
+  text-align: right;
+  font-weight: 500;
+}
+main .quotes .photo-quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+@media screen and (max-width: 768px) {
+  main .quotes .photo-quote {
+    flex-direction: column;
+  }
+}
+main .quotes .photo-quote img {
+  width: 50%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  main .quotes .photo-quote img {
+    width: 100%;
+  }
+}
+main .quotes .photo-quote hr {
+  width: 0.7rem;
+  height: 300px;
+  transform: rotateX("90deg");
+  background-color: #db251d;
+  border: none;
+  margin: 2rem;
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  main .quotes .photo-quote hr {
+    display: none;
+  }
+}
+main .quotes .photo-quote ul {
+  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  main .quotes .photo-quote ul {
+    width: 100%;
+    padding-top: 1rem;
+  }
+}
+main .quotes .photo-quote ul li {
+  font-size: 1.3rem;
+  text-align: left;
+  line-height: 4rem;
+}
+@media screen and (max-width: 1360px) {
+  main .quotes .photo-quote ul li {
+    line-height: 3rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  main .quotes .photo-quote ul li {
+    font-size: 1.1rem;
+    line-height: 2rem;
+  }
+}
+main .quotes .photo-quote ul li::first-letter {
+  font-style: italic;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #db251d;
+}
+main .main-video {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 410px;
+}
+@media screen and (max-width: 1360px) {
+  main .main-video {
+    height: 370px;
+  }
+}
+@media screen and (max-width: 1360px) {
+  main .main-video {
+    height: 500px;
+  }
+}
+main .main-video img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 1;
+}
+main .main-video .cover {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+}
+main .main-video .video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  color: #fff;
+  width: 100%;
+}
+@media screen and (max-width: 1024px) {
+  main .main-video .video-container {
+    flex-direction: column;
+  }
+}
+main .main-video .video-container p {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 1rem;
+}
+@media screen and (max-width: 1360px) {
+  main .main-video .video-container p {
+    font-size: 3.5rem;
+    letter-spacing: 0.8rem;
+  }
+}
+main .main-video .video-container iframe {
+  padding: 2rem;
+}
+@media screen and (max-width: 1360px) {
+  main .main-video .video-container iframe {
+    width: 600px;
+    height: 370px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  main .main-video .video-container iframe {
+    width: 570px;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .main-video .video-container iframe {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 450px) {
+  main .main-video .video-container iframe {
+    width: 100%;
+    height: 250px;
+  }
 }/*# sourceMappingURL=global.css.map */
