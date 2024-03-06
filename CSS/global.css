@@ -825,9 +825,11 @@ main .about-us-header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 0;
   padding: 0 1rem;
   text-align: center;
+}
+main .about-us-header .section-heading {
+  margin-top: 0;
 }
 main .about-us-header img {
   width: 60%;
@@ -1008,4 +1010,196 @@ main .gallery .gallery-wrapper a img {
 main .gallery .gallery-wrapper a img:hover {
   transform: scale(1.1);
   transition: all 0.5s linear;
+}
+
+main .contact-container {
+  width: 100%;
+  max-width: 1360px;
+  margin: 2rem auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+main .contact-container .section-heading {
+  margin-top: 0;
+}
+main .contact-container p {
+  margin-bottom: 2rem;
+}
+main .contact-container .contact {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+  margin-bottom: 4rem;
+}
+@media screen and (max-width: 1400px) {
+  main .contact-container .contact {
+    height: 550px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .contact-container .contact {
+    flex-direction: column;
+    height: auto;
+  }
+}
+main .contact-container .contact .contact-info {
+  width: 60%;
+  height: 100%;
+  padding: 3rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000;
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  main .contact-container .contact .contact-info {
+    height: 420px;
+    width: 100%;
+  }
+}
+main .contact-container .contact .contact-info h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+main .contact-container .contact .contact-info .contact-main-info .info-group {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 1rem;
+}
+main .contact-container .contact .contact-info .contact-main-info .info-group p {
+  font-size: 1.1rem;
+  margin: 1.5rem 0.5rem;
+  text-align: left;
+}
+@media screen and (max-width: 1360px) {
+  main .contact-container .contact .contact-info .contact-main-info .info-group p {
+    font-size: 1rem;
+  }
+}
+main .contact-container .contact .contact-info .social-media-links i {
+  font-size: 2rem;
+  margin: 0 1rem;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+main .contact-container .contact .contact-info .social-media-links i:hover {
+  color: #e8554e;
+}
+main .contact-container .contact form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+@media screen and (max-width: 500px) {
+  main .contact-container .contact form {
+    padding: 2rem;
+  }
+}
+main .contact-container .contact form .form-group {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 1080px) {
+  main .contact-container .contact form .form-group {
+    flex-direction: column;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .contact-container .contact form .form-group {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 500px) {
+  main .contact-container .contact form .form-group {
+    width: 100%;
+  }
+}
+main .contact-container .contact form input,
+main .contact-container .contact form textarea {
+  width: 300px;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid #db251d;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 1360px) {
+  main .contact-container .contact form input,
+  main .contact-container .contact form textarea {
+    width: 280px;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .contact-container .contact form input,
+  main .contact-container .contact form textarea {
+    width: 100%;
+  }
+}
+main .contact-container .contact form input:hover,
+main .contact-container .contact form textarea:hover {
+  background-color: #e5e5e5;
+  border-radius: 0.5rem;
+}
+main .contact-container .contact form input:focus,
+main .contact-container .contact form textarea:focus {
+  background-color: #db251d;
+  outline: none;
+  border-radius: 0.5rem;
+}
+main .contact-container .contact form input:focus::-moz-placeholder, main .contact-container .contact form textarea:focus::-moz-placeholder {
+  color: #fff;
+}
+main .contact-container .contact form input:focus::placeholder,
+main .contact-container .contact form textarea:focus::placeholder {
+  color: #fff;
+}
+main .contact-container .contact form textarea {
+  height: auto;
+}
+@media screen and (max-width: 1080px) {
+  main .contact-container .contact form textarea {
+    height: 120px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .contact-container .contact form textarea {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 500px) {
+  main .contact-container .contact form textarea {
+    width: 100%;
+  }
+}
+main .contact-container .contact form .btn {
+  margin: 2rem;
+  border: none;
+}
+main .contact-container .contact form .btn:hover {
+  background-color: #e8554e;
+  color: #fff;
+}
+@media screen and (max-width: 1080px) {
+  main .contact-container .contact form .btn {
+    width: 200px;
+  }
 }/*# sourceMappingURL=global.css.map */
