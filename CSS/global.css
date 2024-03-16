@@ -1202,4 +1202,35 @@ main .contact-container .contact form .btn:hover {
   main .contact-container .contact form .btn {
     width: 200px;
   }
+}
+
+.posts-container {
+  width: 100%;
+  max-width: 1360px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+.posts-container .post {
+  width: 100%;
+  display: flex;
+  padding-right: 1rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+.posts-container .post img {
+  width: 20rem;
+  height: 15rem;
+  padding-right: 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.posts-container .post .post-details {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: left;
+  flex-direction: column;
 }/*# sourceMappingURL=global.css.map */
