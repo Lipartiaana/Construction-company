@@ -1,28 +1,111 @@
 .posts-container {
   @include section_width();
-  padding: 1rem;
+  padding: 0 2rem;
+  @media screen and (max-width: 500px) {
+    padding: 0 1rem;
+  }
+
+  .section-heading {
+    margin-top: 0;
+  }
 
   .post {
-    width: 100%;
+    width: 90%;
     display: flex;
     padding-right: 1rem;
-    border: 1px solid black;
+    border: none;
     border-radius: 1rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
-    margin-bottom: 2rem;
     overflow: hidden;
+    margin: 2rem auto;
+
+    @media screen and (max-width: 1024px) {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      padding-right: 0;
+    }
 
     img {
       width: 20rem;
-      height: 15rem;
+      height: 16rem;
       padding-right: 1rem;
       object-fit: cover;
+
+      @media screen and (max-width: 1400px) {
+        width: 18rem;
+        height: 14rem;
+      }
+
+      @media screen and (max-width: 1024px) {
+        width: 16rem;
+      }
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 0.5rem;
+      }
+
+      @media screen and (max-width: 500px) {
+        height: 15rem;
+      }
     }
 
     .post-details {
       padding: 1rem;
       @include display_flex(space-around, left);
       flex-direction: column;
+
+      @media screen and (max-width: 1400px) {
+        padding: 0.5rem;
+      }
+
+      @media screen and (max-width: 768px) {
+        height: 12rem;
+      }
+
+      @media screen and (max-width: 500px) {
+        height: 15rem;
+      }
+
+      @media screen and (max-width: 300px) {
+        height: auto;
+      }
+
+      .post-head {
+        h2 {
+          font-size: 1.5rem;
+          padding-bottom: 0.5rem;
+          font-weight: 700;
+
+          @media screen and (max-width: 500px) {
+            font-size: 1.2rem;
+          }
+        }
+
+        .author {
+          font-style: italic;
+          padding-bottom: 0.8rem;
+        }
+      }
+
+      .content {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+
+        @media screen and (max-width: 1400px) {
+          font-size: 1rem;
+          line-height: 1.3rem;
+        }
+
+        @media screen and (max-width: 992px) {
+          font-size: 0.9rem;
+          line-height: 1.1rem;
+        }
+      }
     }
   }
 }
