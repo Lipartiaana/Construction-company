@@ -1,3 +1,5 @@
+import { renderFullPost } from "./fullPost.js";
+
 function renderPost(post) {
   return `
       <div class="post">
@@ -13,7 +15,7 @@ function renderPost(post) {
     `;
 }
 
-function cropContent(contentElement) {
+function cropContent(contentElement, postObj) {
   let text = contentElement.textContent;
   let limit = 300;
 
@@ -24,6 +26,11 @@ function cropContent(contentElement) {
     readMore.href = "#";
     readMore.textContent = "Read more...";
     readMore.classList.add("read-more");
+    contentElement.appendChild(readMore);
+    readMore.addEventListener("click", function (e) {
+      e.preventDefault();
+      renderFullPost(postObj);
+    });
     return { newText, readMore };
   }
   return text;
@@ -42,7 +49,7 @@ fetch("../data.json")
       postContainer.innerHTML = postHTML;
       postsContainer.appendChild(postContainer);
       let contentElement = postContainer.querySelector(".content");
-      let { newText, readMore } = cropContent(contentElement);
+      let { newText, readMore } = cropContent(contentElement, post);
       contentElement.textContent = newText;
       if (readMore) {
         contentElement.appendChild(readMore);

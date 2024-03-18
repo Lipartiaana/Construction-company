@@ -357,13 +357,15 @@ body .card img {
   -o-object-fit: cover;
      object-fit: cover;
 }
-body .read-more {
+body .read-more,
+body .go-back-link {
   margin-left: 0.5rem;
   color: #db251d;
   font-weight: 700;
   transition: all 0.2s ease;
 }
-body .read-more:hover {
+body .read-more:hover,
+body .go-back-link:hover {
   color: #f00;
 }
 body footer {
@@ -1327,4 +1329,63 @@ main .contact-container .contact form .btn:hover {
     font-size: 0.9rem;
     line-height: 1.1rem;
   }
+}
+
+.full-post {
+  padding: 0 1rem;
+}
+.full-post .go-back {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.full-post h2 {
+  padding-top: 1rem;
+}
+@media screen and (max-width: 500px) {
+  .full-post h2 {
+    font-size: 1.7rem;
+  }
+}
+.full-post .full-post-content {
+  min-height: 60vh;
+}
+@media screen and (max-width: 768px) {
+  .full-post .full-post-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+}
+.full-post .full-post-content img {
+  float: left;
+  width: 40%;
+  height: 20rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+  margin: 0 2rem 0.5rem 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 1024px) {
+  .full-post .full-post-content img {
+    height: 16rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .full-post .full-post-content img {
+    width: 100%;
+    margin: 1rem;
+  }
+}
+.full-post .full-post-content .full-post-text .author {
+  text-align: right;
+  font-style: italic;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.full-post .full-post-content .full-post-text .content {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
 }/*# sourceMappingURL=global.css.map */

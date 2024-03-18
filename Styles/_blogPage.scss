@@ -109,3 +109,63 @@
     }
   }
 }
+
+.full-post {
+  padding: 0 1rem;
+
+  .go-back {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  h2 {
+    padding-top: 1rem;
+
+    @media screen and (max-width: 500px) {
+      font-size: 1.7rem;
+    }
+  }
+
+  .full-post-content {
+    min-height: 60vh;
+
+    @media screen and (max-width: 768px) {
+      @include display_flex();
+      flex-direction: column-reverse;
+    }
+
+    img {
+      float: left;
+      width: 40%;
+      height: 20rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+      margin: 0 2rem 0.5rem 0;
+      object-fit: cover;
+
+      @media screen and (max-width: 1024px) {
+        height: 16rem;
+      }
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        margin: 1rem;
+      }
+    }
+
+    .full-post-text {
+      .author {
+        text-align: right;
+        font-style: italic;
+        font-size: 1.1rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+      }
+
+      .content {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+      }
+    }
+  }
+}
