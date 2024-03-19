@@ -2,7 +2,7 @@ import { renderFullPost } from "./fullPost.js";
 
 function renderPost(post) {
   return `
-      <div class="post">
+      <div class="post" id="${post.id}">
         <img src="${post.imageUrl}" alt="${post.title}">
         <div class="post-details">
             <div class="post-head">
@@ -21,10 +21,10 @@ function cropContent(contentElement, postObj) {
 
   // If the content is long, it will show a part.
   if (text.length > limit) {
-    const newText = text.slice(0, limit);
+    const newText = text.slice(0, limit) + "...";
     const readMore = document.createElement("a");
     readMore.href = "#";
-    readMore.textContent = "Read more...";
+    readMore.textContent = "Read more";
     readMore.classList.add("read-more");
     contentElement.appendChild(readMore);
     readMore.addEventListener("click", function (e) {

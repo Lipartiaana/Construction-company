@@ -39,6 +39,30 @@
       "imageUrl": "../Assets/blog/blog5.jpg",
       "author": "Daniel Brown",
       "date": "2024-02-12"
+    },
+    {
+      "id": "6",
+      "title": "The Oasis Hotel",
+      "content": "Nestled amidst serene landscapes, the Oasis Hotel beckons travelers to indulge in a luxurious retreat like no other. With its grand opening on the horizon, anticipation builds for an unparalleled experience blending opulence with nature's tranquility. Guests are greeted by an awe-inspiring lobby, adorned with cascading water features and verdant flora, setting the tone for an unforgettable stay. Each accommodation, offers modern comforts paired with breathtaking views of the surrounding beauty. Dining at the Oasis Hotel is a culinary journey, where world-class chefs craft tantalizing dishes inspired by local flavors. Whether dining under the stars or enjoying a leisurely brunch, every meal is a celebration of gastronomic delights. The Oasis Hotel invites guests to unwind in its wellness facilities too. Experience the Oasis Hotel, a sanctuary where luxury and nature harmonize to create memories that last a lifetime.",
+      "imageUrl": "../Assets/blog/blog6.jpg",
+      "author": "Michael Johnson",
+      "date": "2024-04-22"
+    },
+    {
+      "id": "7",
+      "title": "The Jewel Tower Residences",
+      "content": "Elevating luxury living to new heights, we are thrilled to introduce the Jewel Tower Residences, a stunning collection of exclusive apartments designed for the discerning few who appreciate the finer things in life. Poised to redefine urban living, these lavish residences epitomize elegance, sophistication, and unparalleled comfort. Nestled in the heart of the city's vibrant skyline, the Jewel Tower Residences command awe-inspiring views of the surrounding cityscape, offering a seamless blend of urban convenience and natural beauty. Each residence is meticulously crafted with meticulous attention to detail, showcasing exquisite finishes, state-of-the-art amenities, and timeless design elements that exude sophistication. Step into the grand lobby, where soaring ceilings and sleek marble accents welcome you to a world of luxury. From private elevators to expansive living spaces, every aspect of the Jewel Tower Residences is designed to exceed expectations. Whether hosting lavish soirées in the grand ballroom or unwinding in the private cinema, residents enjoy access to an array of exclusive amenities that cater to their every whim.Indulge in the ultimate culinary experience at our gourmet restaurants, where world-class chefs tantalize your taste buds with innovative culinary creations. From intimate dining experiences to al fresco gatherings on the rooftop terrace, every meal is a celebration of exquisite flavors and impeccable service. But perhaps the true jewel of the Jewel Tower Residences lies in its unparalleled views. Experience a life of uncompromising luxury and sophistication at the Jewel Tower Residences, where every detail is crafted to perfection and every moment is infused with unparalleled opulence.",
+      "imageUrl": "../Assets/blog/blog7.jpg",
+      "author": "Jane Smith",
+      "date": "2024-04-02"
+    },
+    {
+      "id": "8",
+      "title": "Cityscape Residence",
+      "content": "Nestled within the historic heart of the city, Cityscape Residence offers a blend of modern living and old-world charm. With its classic architecture and cozy interiors, this residential haven provides residents with a comfortable retreat amidst the bustling streets. Upon entering the welcoming lobby, residents are greeted by a sense of warmth and familiarity. Each residence is thoughtfully designed to provide ample space and comfort, with traditional touches that evoke a sense of nostalgia. Despite its historic surroundings, Cityscape Residence doesn't compromise on modern amenities. Residents can enjoy access to a range of facilities, including a fitness center, communal garden, and rooftop terrace, providing opportunities for relaxation and leisure. Experience the allure of urban living with a touch of nostalgia at Cityscape Residence, where timeless comfort meets the vibrant energy of the city's old quarter.",
+      "imageUrl": "../Assets/blog/blog8.jpg",
+      "author": "Emily Wilson",
+      "date": "2024-03-25"
     }
   ]
 }
