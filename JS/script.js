@@ -3,7 +3,7 @@ const newsGridContainer = document.querySelector(".news-grid-container");
 function renderLatestNewsHtml(post) {
   return `
     <div class="news-grid-item card">
-            <img src="${post.imageUrl}" alt="${post.title}" />
+            <img src="${post.imageUrl.slice(1)}" alt="${post.title}" />
             <h2>${post.title}</h2>
             <p>
               ${post.content.slice(
