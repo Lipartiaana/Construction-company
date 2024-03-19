@@ -14,7 +14,7 @@ function renderLatestNewsHtml(post) {
           </div>`;
 }
 
-fetch("../data.json")
+fetch("./data.json")
   .then((response) => response.json())
   .then((data) => {
     // Renders by date (latest to oldest)
