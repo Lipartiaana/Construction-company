@@ -9,7 +9,7 @@ function renderLatestNewsHtml(post) {
               ${post.content.slice(
                 0,
                 120
-              )}... <a href="../HTML/blog.html" class="read-more" >See Blog</a>
+              )}... <a href="./HTML/blog.html" class="read-more" >See Blog</a>
             </p>
           </div>`;
 }

@@ -34,6 +34,7 @@
     ></script>
     <script src="./JS/banner.js" defer></script>
     <script type="module" src="./JS/script.js" defer></script>
+    <script src="./JS/modal.js" defer></script>
   </head>
   <body>
     <header>
@@ -91,24 +92,74 @@
     </header>
     <main>
       <section class="blog-categories">
+        <div class="category-modal" style="display: none">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <img class="modal-image" src="" alt="" />
+            <h2 class="modal-title"></h2>
+            <ul class="modal-list"></ul>
+          </div>
+        </div>
         <h2 class="section-heading">We Build</h2>
         <div class="category-grid-container">
-          <a href="#"
+          <a href="#" class="category"
             ><div class="category-grid-item card">
               <img src="./Assets/categories/hotels.jpg" alt="hotels" />
               <h2>Hotels</h2>
+              <ul style="display: none">
+                <li>
+                  Boutique hotel construction:
+                  <span class="price"> $2000 - $5000</span> per m²
+                </li>
+                <li>
+                  Resort construction:
+                  <span class="price"> $3000 - $7000 </span>per m²
+                </li>
+                <li>
+                  Hotel renovation and remodeling:
+                  <span class="price"> $1000 - $3000 </span>per m²
+                </li>
+              </ul>
             </div></a
           >
-          <a href="#"
+          <a href="#" class="category"
             ><div class="category-grid-item card">
               <img src="./Assets/categories/flats.jpg" alt="flats" />
               <h2>Apartments</h2>
+              <ul style="display: none">
+                <li>
+                  Modern apartment complex construction:
+                  <span class="price"> $1500 - $4000 </span>per m²
+                </li>
+                <li>
+                  Urban residential community development:
+                  <span class="price"> $2000 - $5000 </span> per m²
+                </li>
+                <li>
+                  Sustainable apartment buildings:
+                  <span class="price"> $1800 - $4500 </span> per m²
+                </li>
+              </ul>
             </div></a
           >
-          <a href="#"
+          <a href="#" class="category"
             ><div class="category-grid-item card">
               <img src="./Assets/categories/houses.jpg" alt="houses" />
               <h2>Houses</h2>
+              <ul style="display: none">
+                <li>
+                  Custom-built home construction:
+                  <span class="price"> $2000 - $6000 </span> per m²
+                </li>
+                <li>
+                  Contemporary house designs:
+                  <span class="price"> $2500 - $7000 </span> per m²
+                </li>
+                <li>
+                  Traditional craftsmanship and architecture:
+                  <span class="price"> $2200 - $5500 </span> per m²
+                </li>
+              </ul>
             </div></a
           >
         </div>

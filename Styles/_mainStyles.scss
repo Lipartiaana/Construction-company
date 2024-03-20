@@ -189,6 +189,94 @@ body {
     margin: 4rem 0 2rem 0;
   }
 
+  .modal {
+    position: fixed;
+    @include display_flex();
+    left: 0;
+    top: 0;
+    width: 100vw;
+    min-height: 100vh;
+    z-index: 1000;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    @media screen and (max-height: 660px) {
+      align-items: flex-start;
+    }
+
+    .modal-content {
+      background-color: $white-color;
+      padding: 1rem;
+      border: none;
+      width: 50%;
+      height: auto;
+      border-radius: 1rem;
+
+      @media screen and (max-width: 1360px) {
+        width: 70%;
+      }
+
+      @media screen and (max-width: 992px) {
+        width: 90%;
+      }
+
+      .close {
+        text-align: right;
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          color: $primary-color-hover;
+        }
+      }
+
+      img {
+        width: 85%;
+        height: 18rem;
+        object-fit: cover;
+        margin: 1rem 0;
+        border-radius: 1rem;
+        align-self: center;
+
+        @media screen and (max-width: 768px) {
+          width: 90%;
+          height: 14rem;
+        }
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-align: center;
+      }
+
+      ul {
+        align-self: center;
+        margin: 1rem;
+
+        @media screen and (max-width: 768px) {
+          width: 80%;
+        }
+
+        li {
+          list-style-type: disc;
+          font-size: 1.1rem;
+          line-height: 2rem;
+
+          @media screen and (max-width: 500px) {
+            font-size: 0.9rem;
+          }
+
+          .price {
+            font-weight: 500;
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+
   .card {
     color: #000;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);

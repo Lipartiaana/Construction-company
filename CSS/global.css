@@ -336,6 +336,94 @@ body .section-heading {
   letter-spacing: 0.2rem;
   margin: 4rem 0 2rem 0;
 }
+body .modal {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  min-height: 100vh;
+  z-index: 1000;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+@media screen and (max-height: 660px) {
+  body .modal {
+    align-items: flex-start;
+  }
+}
+body .modal .modal-content {
+  background-color: #fff;
+  padding: 1rem;
+  border: none;
+  width: 50%;
+  height: auto;
+  border-radius: 1rem;
+}
+@media screen and (max-width: 1360px) {
+  body .modal .modal-content {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 992px) {
+  body .modal .modal-content {
+    width: 90%;
+  }
+}
+body .modal .modal-content .close {
+  text-align: right;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+body .modal .modal-content .close:hover {
+  color: #e8554e;
+}
+body .modal .modal-content img {
+  width: 85%;
+  height: 18rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 1rem 0;
+  border-radius: 1rem;
+  align-self: center;
+}
+@media screen and (max-width: 768px) {
+  body .modal .modal-content img {
+    width: 90%;
+    height: 14rem;
+  }
+}
+body .modal .modal-content h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+body .modal .modal-content ul {
+  align-self: center;
+  margin: 1rem;
+}
+@media screen and (max-width: 768px) {
+  body .modal .modal-content ul {
+    width: 80%;
+  }
+}
+body .modal .modal-content ul li {
+  list-style-type: disc;
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+@media screen and (max-width: 500px) {
+  body .modal .modal-content ul li {
+    font-size: 0.9rem;
+  }
+}
+body .modal .modal-content ul li .price {
+  font-weight: 500;
+  color: #db251d;
+}
 body .card {
   color: #000;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
