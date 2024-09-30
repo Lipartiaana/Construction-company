@@ -336,6 +336,15 @@ body .section-heading {
   letter-spacing: 0.2rem;
   margin: 4rem 0 2rem 0;
 }
+body .faded-section {
+  opacity: 0;
+  transform: translateY(5rem);
+  transition: all 2s ease;
+}
+body .fade-in {
+  opacity: 1;
+  transform: translateY(0rem);
+}
 body .modal {
   position: fixed;
   display: flex;
