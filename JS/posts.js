@@ -36,24 +36,29 @@ function cropContent(contentElement, postObj) {
   return text;
 }
 
-fetch("../data.json")
-  .then((response) => response.json())
-  .then((data) => {
-    // Renders by date (latest to oldest)
+async function getPostsData() {
+  try {
+    const response = await fetch("../data.json");
+    const data = await response.json();
+    // Sort posts by date (latest to oldest)
     data.posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+    const postsData = data.posts;
+    return postsData;
+  } catch (error) {
+    console.error("Error fetching projects:", error);
+  }
+}
 
-    const postsContainer = document.querySelector(".posts-container");
-    data.posts.forEach((post) => {
-      let postContainer = document.createElement("div");
-      let postHTML = renderPost(post);
-      postContainer.innerHTML = postHTML;
-      postsContainer.appendChild(postContainer);
-      let contentElement = postContainer.querySelector(".content");
-      let { newText, readMore } = cropContent(contentElement, post);
-      contentElement.textContent = newText;
-      if (readMore) {
-        contentElement.appendChild(readMore);
-      }
-    });
-  })
-  .catch((error) => console.error("Error fetching projects:", error));
+function createPostCard(post) {
+  const postContainer = document.createElement("div");
+  postContainer.innerHTML = renderPost(post);
+  let contentElement = postContainer.querySelector(".content");
+  let { newText, readMore } = cropContent(contentElement, post);
+  contentElement.textContent = newText;
+  if (readMore) {
+    contentElement.appendChild(readMore);
+  }
+  return postContainer;
+}
+
+export { getPostsData, createPostCard };

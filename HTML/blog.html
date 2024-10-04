@@ -31,8 +31,10 @@
       crossorigin="anonymous"
       defer
     ></script>
+
     <script type="module" src="../JS/posts.js" defer></script>
     <script type="module" src="../JS/fullPost.js" defer></script>
+    <script type="module" src="../JS/pagination.js" defer></script>
   </head>
   <body>
     <header>
@@ -79,8 +81,14 @@
       </nav>
     </header>
     <main>
-      <div class="posts-container">
+      <div class="blog-container">
         <h2 class="section-heading">Blog</h2>
+        <div class="posts-container"></div>
+        <div class="pagination-container">
+          <button id="prev-btn">Prev</button>
+          <span id="page-info">Page 1 of 0</span>
+          <button id="next-btn">Next</button>
+        </div>
       </div>
     </main>
     <footer>

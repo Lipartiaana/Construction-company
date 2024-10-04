@@ -345,6 +345,23 @@ body .fade-in {
   opacity: 1;
   transform: translateY(0rem);
 }
+body .pagination-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+body .pagination-container button {
+  background-color: #f00;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+}
+body .pagination-container button:disabled {
+  color: #aaa;
+}
 body .modal {
   position: fixed;
   display: flex;
@@ -1393,21 +1410,21 @@ main .contact-container .contact form .btn:hover {
   }
 }
 
-.posts-container {
+.blog-container {
   width: 100%;
   max-width: 1360px;
   margin: 2rem auto;
   padding: 0 2rem;
 }
 @media screen and (max-width: 500px) {
-  .posts-container {
+  .blog-container {
     padding: 0 1rem;
   }
 }
-.posts-container .section-heading {
+.blog-container .section-heading {
   margin-top: 0;
 }
-.posts-container .post {
+.blog-container .post {
   width: 90%;
   display: flex;
   padding-right: 1rem;
@@ -1418,17 +1435,17 @@ main .contact-container .contact form .btn:hover {
   margin: 2rem auto;
 }
 @media screen and (max-width: 1024px) {
-  .posts-container .post {
+  .blog-container .post {
     width: 100%;
   }
 }
 @media screen and (max-width: 768px) {
-  .posts-container .post {
+  .blog-container .post {
     flex-direction: column;
     padding-right: 0;
   }
 }
-.posts-container .post img {
+.blog-container .post img {
   width: 20rem;
   height: 16rem;
   padding-right: 1rem;
@@ -1436,29 +1453,29 @@ main .contact-container .contact form .btn:hover {
      object-fit: cover;
 }
 @media screen and (max-width: 1400px) {
-  .posts-container .post img {
+  .blog-container .post img {
     width: 18rem;
     height: 14rem;
   }
 }
 @media screen and (max-width: 1024px) {
-  .posts-container .post img {
+  .blog-container .post img {
     width: 16rem;
   }
 }
 @media screen and (max-width: 768px) {
-  .posts-container .post img {
+  .blog-container .post img {
     width: 100%;
     padding-right: 0;
     margin-bottom: 0.5rem;
   }
 }
 @media screen and (max-width: 500px) {
-  .posts-container .post img {
+  .blog-container .post img {
     height: 15rem;
   }
 }
-.posts-container .post .post-details {
+.blog-container .post .post-details {
   padding: 1rem;
   display: flex;
   justify-content: space-around;
@@ -1466,51 +1483,51 @@ main .contact-container .contact form .btn:hover {
   flex-direction: column;
 }
 @media screen and (max-width: 1400px) {
-  .posts-container .post .post-details {
+  .blog-container .post .post-details {
     padding: 0.5rem;
   }
 }
 @media screen and (max-width: 768px) {
-  .posts-container .post .post-details {
+  .blog-container .post .post-details {
     height: 12rem;
   }
 }
 @media screen and (max-width: 500px) {
-  .posts-container .post .post-details {
+  .blog-container .post .post-details {
     height: 15rem;
   }
 }
 @media screen and (max-width: 300px) {
-  .posts-container .post .post-details {
+  .blog-container .post .post-details {
     height: auto;
   }
 }
-.posts-container .post .post-details .post-head h2 {
+.blog-container .post .post-details .post-head h2 {
   font-size: 1.5rem;
   padding-bottom: 0.5rem;
   font-weight: 700;
 }
 @media screen and (max-width: 500px) {
-  .posts-container .post .post-details .post-head h2 {
+  .blog-container .post .post-details .post-head h2 {
     font-size: 1.2rem;
   }
 }
-.posts-container .post .post-details .post-head .author {
+.blog-container .post .post-details .post-head .author {
   font-style: italic;
   padding-bottom: 0.8rem;
 }
-.posts-container .post .post-details .content {
+.blog-container .post .post-details .content {
   font-size: 1.1rem;
   line-height: 1.5rem;
 }
 @media screen and (max-width: 1400px) {
-  .posts-container .post .post-details .content {
+  .blog-container .post .post-details .content {
     font-size: 1rem;
     line-height: 1.3rem;
   }
 }
 @media screen and (max-width: 992px) {
-  .posts-container .post .post-details .content {
+  .blog-container .post .post-details .content {
     font-size: 0.9rem;
     line-height: 1.1rem;
   }

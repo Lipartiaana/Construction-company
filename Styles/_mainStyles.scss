@@ -200,6 +200,24 @@ body {
     transform: translateY(0rem);
   }
 
+  .pagination-container {
+    width: 100%;
+    @include display_flex();
+    gap: 10px;
+
+    button {
+      background-color: $red-color;
+      color: $white-color;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 5px;
+
+      &:disabled {
+        color: $dark-gray-color;
+      }
+    }
+  }
+
   .modal {
     position: fixed;
     @include display_flex();

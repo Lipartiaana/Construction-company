@@ -1,9 +1,9 @@
-const blogContainer = document.querySelector(".posts-container");
+const blogContainer = document.querySelector(".blog-container");
 
 function renderFullPostHtml(post) {
   return `
       <div class="full-post">
-      <span class="go-back"> <a class="go-back-link" href="../HTML/blog.html"> Blog </a> / ${post.title}</span>
+      <span class="go-back"> <a class="go-back-link" href="../HTML/blog.html" > Blog &gt;</a>  ${post.title}</span>
         <h2 class="section-heading">${post.title}</h2>
             <div class="full-post-content">
                 <img src="${post.imageUrl}" alt="${post.title}">
